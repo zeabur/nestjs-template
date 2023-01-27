@@ -15,8 +15,10 @@ describe('AppController', () => {
   });
 
   describe('root', () => {
-    it('should return "Hello World!"', () => {
-      expect(appController.getHello()).toBe('Hello World!');
+    it('should return "Welcome, this is a basic NestJS (https://docs.nestjs.com/) server deployed on Zeabur (https://zeabur.com)"', () => {
+      expect(appController.getHello()).toBe(
+        'Welcome, this is a basic NestJS (https://docs.nestjs.com/) server deployed on Zeabur (https://zeabur.com)',
+      );
     });
   });
 });
